@@ -4,6 +4,7 @@ import {
   provideClientHydration,
 } from '@angular/platform-browser';
 
+import { HttpClientModule } from '@angular/common/http';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
@@ -43,6 +44,7 @@ import { ProductCrudComponent } from './views/product-crud/product-crud.componen
     MatListModule,
     MatCardModule,
     MatSnackBarModule,
+    HttpClientModule,
   ],
   providers: [provideClientHydration(), provideAnimationsAsync()],
   bootstrap: [AppComponent],
